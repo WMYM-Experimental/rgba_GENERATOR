@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rgba_GENERATOR</title>
     <!-- style files -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/RGBA_GEN/css/style.css">
     <!-- script file -->
-    <script src="/js/index.js"></script>
+    <script src="/RGBA_GEN/js/index.js"></script>
     <!-- google fonts api -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,21 +28,19 @@
     <div class="rgba-container">
         <div class="sliders">
             <h2>RED</h2>
-            <input type="range" value="0" id="red-inp" min="0" max="255" oninput="getColorValue()">
+            <input type="range" value="0" id="red" min="0" max="255" oninput="getColorValue()">
             <h2>GREEN</h2>
-            <input type="range" value="0" id="green-inp" min="0" max="255" oninput="getColorValue()">
+            <input type="range" value="0" id="green" min="0" max="255" oninput="getColorValue()">
             <h2>BLUE</h2>
-            <input type="range" value="0" id="blue-inp" min="0" max="255" oninput="getColorValue()">
+            <input type="range" value="0" id="blue" min="0" max="255" oninput="getColorValue()">
             <h2>ALFA</h2>
-            <input type="range" value="0" id="alpha-inp" min="0" max="255" oninput="getColorValue()">
+            <input type="range" value="0" id="alpha" min="0" max="255" oninput="getColorValue()">
         </div>
 
         <div class="output-box">
-            <div class="output-text">
-                rgba(0,0,0,1)
-            </div>
+            <div class="output">rgba(0,0,0,1)</div>
 
-            <div class="copy-btn" onclick="copy()">
+            <div class="copy-btn" onclick="copyColor()">
                 <span class="material-icons material-icons-outlined">
                     content_copy
                 </span>
