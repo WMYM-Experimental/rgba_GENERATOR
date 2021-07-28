@@ -5,8 +5,8 @@ function getColorValue() {
   let green = document.getElementById("green").value;
   let blue = document.getElementById("blue").value;
   let alpha = document.getElementById("alpha").value;
-  documen.body.style.background =
-    "rgba(" + red + "," + blue + "," + green + "," + alpha + ")";
+  document.body.style.background =
+    "rgba(" + red + "," + green + "," + blue + "," + alpha + ")";
   outputBox.innerHTML = `rgba(${red},${green},${blue},${alpha})`;
 }
 

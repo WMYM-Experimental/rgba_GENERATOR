@@ -9,7 +9,7 @@
     <!-- style files -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- script file -->
-    <script src="/js/index.js"></script>
+    <script src="/js/index.js" defer></script>
     <!-- google fonts api -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,14 +34,14 @@
             <h2>BLUE</h2>
             <input type="range" value="0" id="blue" min="0" max="255" oninput="getColorValue()">
             <h2>ALPHA</h2>
-            <input type="range" value="0" id="alpha" min="0" max="255" oninput="getColorValue()">
+            <input type="range" value="1" id="alpha" min="0" max="1" step="0.01" oninput="getColorValue()">
         </div>
 
-        <div class="output-box">
+        <div class="output-box" onclick="copyColor()">
             <div class="output">rgba(0,0,0,1)</div>
 
             <div class="copy-btn" onclick="copyColor()">
-                <span class="material-icons material-icons-outlined">
+                <span class="material-icons material-icons-outlined" onclick="copyColor()">
                     content_copy
                 </span>
             </div>
