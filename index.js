@@ -7,7 +7,7 @@ function getColorValue() {
   let alpha = document.getElementById("alpha").value;
   document.body.style.background =
     "rgba(" + red + "," + green + "," + blue + "," + alpha + ")";
-  outputBox.innerHTML = `rgba(${red},${green},${blue},${alpha})`;
+  outputBox.innerHTML = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
 }
 
 function copyColor() {
