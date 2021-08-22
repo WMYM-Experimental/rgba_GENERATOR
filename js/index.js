@@ -17,7 +17,7 @@ function copyColor() {
   textColor.select();
   document.execCommand("copy");
   document.body.removeChild(textColor);
-  alert("COLOR COPIED!!");
+  console.log("COLOR COPIED!!");
 }
 
 getColorValue();
