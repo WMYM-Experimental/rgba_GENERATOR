@@ -10,15 +10,12 @@ function getColorValue() {
   outputBox.innerHTML = `rgba(${red},${green},${blue},${alpha})`;
 }
 
-function copyColor() {
-  let textColor = document.createElement("text-area");
-  textColor.value = outputBox.textContent;
-  document.body.appendChild(textColor);
+function copyColorToClipBoard() {
+  let textColor = document.getElementById("output");
   textColor.select();
-  document.execCommand("copy");
-  document.body.removeChild(textColor);
+  document.execCommand('copy');
   console.log("COLOR COPIED!!");
 }
 
 getColorValue();
-copy();
+copyColorToClipBoard()
